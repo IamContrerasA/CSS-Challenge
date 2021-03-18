@@ -1,7 +1,8 @@
+import "./style.css";
+
 import { Button } from "../../StyleComponents/button.js";
 import { Gradient } from "../../StyleComponents/gradient.js";
 import { DetailsStorageStyle } from "../../StyleComponents/storageDetails.js";
-import "./style.css";
 
 export const SidebarRight = () => {
   return ( 
