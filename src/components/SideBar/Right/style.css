@@ -1,0 +1,106 @@
+.sidebar-right {
+	display: grid;
+	grid-gap: 0%;
+	grid-template-rows: 9% 2% 29% 25% 35%;
+	grid-template-areas: 
+    "user"
+    "line-rigth"
+    "storageChart"
+    "storageDetails"
+    "upgradeMessage";
+}
+
+.user{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  grid-area: user;
+}
+.user .graySquareContainer .graySquare{
+  width: 15px;
+  height: 15px;
+  margin-right: 13px;
+  background: #C4C4C4;
+}
+.user .userInfo {
+  display: flex;
+  align-items: center;
+}
+.user .userInfo .userName{
+  font-size: 22px;
+}
+.user .userInfo .userPhoto{
+  width: 31px;
+  height: 31px;
+  margin-left: 10px;
+  border-radius: 50%;
+  background: #C4C4C4;
+}
+
+.lineRigth{
+  height: 0px;
+  border: 1px solid #E0E7F1;
+  grid-area: line-rigth;
+}
+
+.storageChart{
+  margin-left: 10%;
+  margin-right: 10%;
+  grid-area: storageChart;
+}
+.storageChart p{
+  display: flex;
+  justify-content: center;
+  font-size: 10px;
+  line-height: 9px;
+  letter-spacing: 0.05em;
+  color: #858A9D;
+}
+.circular-chart {
+  display: block;
+  margin: 10px auto;
+  max-width: 40%;
+  max-height: 250px;
+}
+.circular-chart text{
+  font-size: 10px;
+
+}
+.circle {
+  stroke: #4CC790;
+  fill: none;
+  stroke-width: 2.8;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
+}
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+
+.storageDetails{
+  margin-left: 10%;
+  margin-right: 10%;
+  grid-area: storageDetails;
+  display: grid;
+	grid-gap: 0%;
+	grid-template-columns: auto;
+  grid-template-rows: auto;
+}
+.upgradeMessage{
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  background-color: white;
+  border-radius: 18px;
+  grid-area: upgradeMessage;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
