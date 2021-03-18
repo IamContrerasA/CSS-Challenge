@@ -1,7 +1,8 @@
+import "./style.css";
+
 import { Gradient } from "../../StyleComponents/gradient";
 import { OptionsTopStyle } from "../../StyleComponents/optionsTop";
 import { OptionsBottomStyle } from "../../StyleComponents/optionsBottom";
-import "./style.css";
 import { Button } from "../../StyleComponents/button";
 
 export const SidebarLeft = () => {
