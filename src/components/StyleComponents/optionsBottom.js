@@ -10,7 +10,7 @@ export const OptionsBottom = ({ children, className }) => {
 
 export const OptionsBottomStyle = styled(OptionsBottom)`
   height: 10px;
-  margin-left: 7px;
+  margin-left: 15px;
   margin-top: 11px;
   font-size: 14px;
   color: #BEC0C8;
