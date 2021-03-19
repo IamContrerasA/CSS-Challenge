@@ -57,8 +57,8 @@ export const FileDetailsStyle = styled(fileDetail)`
   .dots{
     justify-self: center;
     width: 30px;
-    height: 30px;
-    background-image: radial-gradient(circle, #C4C4C4 3px, transparent 3px);
+    height: 25px;
+    background-image: radial-gradient(circle, #C4C4C4 2px, transparent 0px);
     background-size: 33.33% 100%;
     grid-area: dots;
   }

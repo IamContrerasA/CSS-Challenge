@@ -84,9 +84,9 @@ export const CardStyles = styled(Card)`
 
   .dots{
     width: 50px;
-    height: 30px;
+    height: 25px;
     margin-top: 14px;
-    background-image: radial-gradient(circle, #C4C4C4 3px, transparent 3px);
+    background-image: radial-gradient(circle, #C4C4C4 2px, transparent 0px);
     background-size: 100% 33.33%;
     grid-area: dots;
   }
