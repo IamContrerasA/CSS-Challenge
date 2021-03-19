@@ -32,10 +32,10 @@ export const Content = () => {
 
       <div className = 'recentlyFiles'>
         <div className = 'title title-text'>Recent Files</div>
-        <div className = 'viewAll'>View All</div>
-        <div className = 'name'>Name</div>
-        <div className = 'members'>Members</div>
-        <div className = 'modified'>Last Modified</div>
+        <div className = 'viewAll subtitle-text'>View All</div>
+        <div className = 'name subtitle-text'>Name</div>
+        <div className = 'members subtitle-text'>Members</div>
+        <div className = 'modified subtitle-text'>Last Modified</div>
         <div className = 'recentFile'>
           <FileDetailsStyle color='#FF9F00' name='Travel Landing Page' members='5' modified='8'/>
           <FileDetailsStyle color='#4AC29D' name='True Photos' members='12' modified='8'/>
@@ -47,7 +47,7 @@ export const Content = () => {
       <div className = 'shared'>
         <div className='sharedTitle'>
           <div className = 'title-text'>Shared with me</div>
-          <div>View All</div>
+          <div className = 'subtitle-text'>View All</div>
         </div>
         <div className='sharedCards'>
           <CardBottomStyles text1='Landing Page' text2='Created 20.02.2020'/>

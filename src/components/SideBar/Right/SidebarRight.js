@@ -14,7 +14,7 @@ export const SidebarRight = () => {
           <span className="graySquare"></span>
         </div>
         <div className = 'userInfo'>
-          <span className = 'userName'>Name</span>
+          <span className = 'userName subtitle-text'>Name</span>
           <span className = 'userPhoto'></span>
         </div>
       </div>
@@ -49,9 +49,9 @@ export const SidebarRight = () => {
 
       <div className = 'upgradeMessage'>
         <Gradient></Gradient>
-        <div>Buy more space now!</div>
-        <div className="mini-text">Upgrade to cloud premium</div>
-        <div></div>
+        <div>Buy more space now!
+          <div className="mini-text">Upgrade to cloud premium</div>
+        </div>
         <Button>Upgrade Account!</Button>
       </div>
     </div>
