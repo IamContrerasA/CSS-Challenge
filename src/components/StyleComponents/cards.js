@@ -32,18 +32,18 @@ export const CardStyles = styled(Card)`
     "mini-text mini-text dots";
 
   .multiSquare{
-    width: 30px;
-    height: 26px;
+    width: 40px;
+    height: 36px;
     background: #FF9F00;
-    box-shadow: -5px 5px #FFD999;
+    box-shadow: -6px 6px #FFD999;
     align-self: center;
     justify-self: center;
     grid-area: multiSquare;
   }
   .multiCircles{
-    width: 15px;
-    height: 15px;
-    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
     border: 1px solid #BEC0C8;
     align-self: center;
     justify-self: start;
@@ -51,9 +51,9 @@ export const CardStyles = styled(Card)`
     grid-area: multiCircles;
   }
   .multiCircles2{
-    width: 15px;
-    height: 15px;
-    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+    margin-left: 15px;
     align-self: center;
     justify-self: start;
     border: 1px solid #BEC0C8;
@@ -63,9 +63,9 @@ export const CardStyles = styled(Card)`
   }
   ${(props) => props.size >= 3 ?`
     .multiCircles3{
-      width: 15px;
-      height: 15px;
-      margin-left: 20px;
+      width: 20px;
+      height: 20px;
+      margin-left: 30px;
       align-self: center;
       justify-self: start;
       border: 1px solid #BEC0C8;
@@ -74,10 +74,10 @@ export const CardStyles = styled(Card)`
       grid-area: multiCircles;
     }
     .multiCircles3::after{
-      font-size: 10px;
+      font-size: 11px;
       display: flex;  
-      justify-content: center;
-      margin-top:-4px;
+      flex-direction: column;
+      align-items: center;
       content:"+3";
     }`
   :''}
