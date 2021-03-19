@@ -25,6 +25,9 @@
   border: none;
   width: 90%;
 }
+.search input::placeholder{
+  color: #BCBECA;
+}
 
 .recentlyUsed{
   grid-area: recentlyUsed;
