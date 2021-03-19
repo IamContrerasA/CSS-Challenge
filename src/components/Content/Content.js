@@ -17,7 +17,7 @@ export const Content = () => {
 
       <div className = 'recentlyUsed'>
         <div className='recentyleUsedTitle'>
-          Recently Used
+        <div className = 'title-text'>Recently Used</div>
           <div className = 'graySquareContainer'>
             <Square border = '#343951' space='10px'/>
             <Square border = '#9D9FAF'/>
@@ -31,7 +31,7 @@ export const Content = () => {
       </div>
 
       <div className = 'recentlyFiles'>
-        <div className = 'title'>Recently Files</div>
+        <div className = 'title title-text'>Recently Files</div>
         <div className = 'viewAll'>View All</div>
         <div className = 'name'>Name</div>
         <div className = 'members'>Members</div>
@@ -46,7 +46,7 @@ export const Content = () => {
 
       <div className = 'shared'>
         <div className='sharedTitle'>
-          Shared with me
+          <div className = 'title-text'>Shared with me</div>
           <div>View All</div>
         </div>
         <div className='sharedCards'>

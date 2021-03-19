@@ -33,3 +33,9 @@ span{
   letter-spacing: 0.05em;
   color: #858A9D;
 }
+.title-text{
+  font-size: 30px;
+}
+.subtitle-text{
+  font-size: 12px;
+}

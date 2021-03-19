@@ -23,7 +23,7 @@ export const SidebarRight = () => {
       </div>
 
       <div className = 'storageChart'>
-        Storage
+        <div className='title-text'>Storage</div>
         
         <svg viewBox='0 0 100 100'>
           <circle cx='50' cy='50' r='45' id='orange'/>
