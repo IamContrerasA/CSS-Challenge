@@ -9,7 +9,7 @@ export const Button = styled.button`
   color: white;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: ${(props) => props.plus ? 'space-between' : 'center'};
   align-items center;
 
   .plusSymbol {

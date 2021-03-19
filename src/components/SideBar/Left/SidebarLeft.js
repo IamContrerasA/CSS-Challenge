@@ -32,7 +32,7 @@ export const SidebarLeft = () => {
       </div>
 
       <div className = 'bottom-button'>
-        <Button>Create new<span className="plusSymbol">&#43;</span></Button>
+        <Button plus = 'true'>Create new<span className="plusSymbol">&#43;</span></Button>
       </div>
     </div>
   );
