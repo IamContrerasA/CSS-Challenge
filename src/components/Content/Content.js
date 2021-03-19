@@ -31,7 +31,7 @@ export const Content = () => {
       </div>
 
       <div className = 'recentlyFiles'>
-        <div className = 'title title-text'>Recently Files</div>
+        <div className = 'title title-text'>Recent Files</div>
         <div className = 'viewAll'>View All</div>
         <div className = 'name'>Name</div>
         <div className = 'members'>Members</div>
