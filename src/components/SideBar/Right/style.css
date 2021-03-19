@@ -47,31 +47,71 @@
   margin-left: 10%;
   margin-right: 10%;
   grid-area: storageChart;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.storageChart .storageText{
+  font-size: 34px;
+  margin-top: -155px;
+  width: 130px;
+  height: 130px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  
 }
 .storageChart p{
-  display: flex;
-  justify-content: center;
+  margin-top: 40px;
+  align-self: center;
   font-size: 10px;
   line-height: 9px;
   letter-spacing: 0.05em;
   color: #858A9D;
 }
-.circular-chart {
-  display: block;
-  margin: 10px auto;
-  max-width: 40%;
-  max-height: 250px;
+.storageChart .mini-text{
+  margin-top: 10px;
+  font-size: 25px;
 }
-.circular-chart text{
-  font-size: 10px;
-
+.storageChart svg {
+  align-self: center;
+  height: 180px;
+  width: 180px;
 }
-.circle {
-  stroke: #4CC790;
-  fill: none;
-  stroke-width: 2.8;
+.storageChart svg circle {
+  stroke-width: 4px;
   stroke-linecap: round;
+  fill: transparent;
   animation: progress 1s ease-out forwards;
+}
+#green{
+  stroke: #4AC29D;
+  stroke-dasharray: 35.5, 284;
+  stroke-dashoffset: -215.75;
+}
+#blue{
+  stroke: #689FF8;
+  stroke-dasharray: 70.5, 284;
+  stroke-dashoffset: -135.75;
+}
+#gray{
+  stroke: #BCBECA;
+  stroke-dasharray: 45.5, 284;
+  stroke-dashoffset: -83.75;
+}
+#orange{
+  stroke: #FF9F00;
+  stroke-dasharray: 36.5, 284;
+  stroke-dashoffset: 60;
+}
+#orange2{
+  stroke: #FF9F00;
+  stroke-dasharray: 75.5, 284;
+  stroke-dashoffset: 0;
 }
 
 @keyframes progress {

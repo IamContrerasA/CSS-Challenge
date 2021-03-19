@@ -23,17 +23,19 @@ export const SidebarRight = () => {
       </div>
 
       <div className = 'storageChart'>
-        <h2>Storage</h2>
-        <svg viewBox="0 0 36 36" className="circular-chart">
-          <path className="circle"
-            values='asd'
-            strokeDasharray="80, 100"
-            d="M18 2.0845
-              a 15.9155 15.9155 0 0 1 0 31.831
-              a 15.9155 15.9155 0 0 1 0 -31.831"
-          />
-          <text x="25%" y="60%" >85%</text>
+        Storage
+        
+        <svg viewBox='0 0 100 100'>
+          <circle cx='50' cy='50' r='45' id='orange'/>
+          <circle cx='50' cy='50' r='45' id='orange2'/>
+          <circle cx='50' cy='50' r='45' id='green'/>
+          <circle cx='50' cy='50' r='45' id='gray'/>
+          <circle cx='50' cy='50' r='45' id='blue'/>
+          
         </svg>
+        <div className ='storageText'>85%
+          <div className='mini-text'>Used</div>
+        </div>
         <p>420.2 GB of 500 GB used</p>
       </div>
       
