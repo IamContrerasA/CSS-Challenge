@@ -13,7 +13,7 @@ export const OptionsTopStyle = styled(OptionsTop)`
   height: 10px;
   margin-left: ${props => props.isSelected === 'true' ? "0" : "18"}%;
   margin-top: 38px;
-  font-size: 16px;
+  font-size: 14px;
   color: ${props => props.isSelected === 'true' ? "#FFFFFF" : "#858A9D"};
 
   .square {
