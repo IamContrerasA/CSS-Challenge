@@ -29,14 +29,12 @@ export const DetailsStorageStyle = styled(detailsStorage)`
   .text1{
     font-size: 14px;
     line-height: 12px;
-    color: #343951;
     grid-area: text1;
   }
   .text1::after {content: '${(props) => props.text1}';}
 
   .mini-text{
     justify-content: start;
-    color: #343951;
     grid-area: text2;
   }
   .mini-text::after {content: '${(props) => props.text2}';}
@@ -50,8 +48,8 @@ export const DetailsStorageStyle = styled(detailsStorage)`
     height: 28px;
     background: #FFFFFF;
     border-radius: 4px;
-    color: black
-    border-radius: 8px;
+    color: black;
+    font-size: 12px;
     grid-area: value;
   }
   .value::after {content: '${(props) => props.value}';}

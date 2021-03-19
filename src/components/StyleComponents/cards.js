@@ -17,7 +17,7 @@ export const Card = ({ children, className }) => {
 
 export const CardStyles = styled(Card)`
   width: 260px;
-  height: 160px;
+  height: 180px;
   margin-right:16px;
   margin-top:16px;  
   box-shadow:0 2px 5px 1px #e7e7e7;

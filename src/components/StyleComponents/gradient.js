@@ -6,7 +6,6 @@ export const Gradient = styled.div`
   height: ${props => props.component === 'left' ? "21" : "100"}px;
   margin-left: 18%;
   margin-right: 18%;
-  margin-top: 36px;
   background: linear-gradient(270deg, #689EF8 0%, #FF6860 56.25%, #FF9F00 100%);
   border-radius: ${props => props.component === 'left' ? "5" : "12"}px;
 `;

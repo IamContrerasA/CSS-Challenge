@@ -13,6 +13,9 @@
 
 .gradient{
   grid-area: gradient;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .options-top{
   grid-area: options-top;
