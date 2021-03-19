@@ -28,7 +28,6 @@ span{
 }
 .mini-text{
   display: flex;
-  justify-content: center;
   font-size: 10px;
   line-height: 9px;
   letter-spacing: 0.05em;

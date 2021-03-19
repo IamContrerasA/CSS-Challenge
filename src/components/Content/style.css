@@ -1,0 +1,97 @@
+.content {
+  display: grid;
+	grid-template-rows: 10% 25% 40% 25%;
+  grid-template-columns: 4% 92% 4%;
+  grid-template-areas: 
+    ". search ."
+    ". recentlyUsed ."
+    ". recentlyFiles ."
+    ". shareduser .";
+}
+
+.search{
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  align-items: center;
+  background-color: white;
+  color: #BCBECA;
+  border-radius: 5px;
+  height: 35px;
+  grid-area: search;
+}
+
+.search input{
+  border: none;
+  width: 90%;
+}
+
+.recentlyUsed{
+  grid-area: recentlyUsed;
+}
+.recentlyUsed .recentyleUsedTitle{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.recentlyUsed .recentyleUsedCards{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.recentlyFiles{
+  grid-area: recentlyFiles;
+  display: grid;
+  
+  grid-template-rows: 10% 10% 80%;
+  grid-template-columns: 50% 20% 20% 10%;
+  grid-template-areas: 
+    "title . . viewAll"
+    "name members modified ."
+    "recentFile recentFile recentFile recentFile";
+}
+.recentlyFiles .title{
+  grid-area: title;
+}
+.recentlyFiles .viewAll{
+  justify-self: end;
+  grid-area: viewAll;
+}
+.recentlyFiles .name{
+  color: #858A9D;
+  grid-area: name;
+}
+.recentlyFiles .members{
+  color: #858A9D;
+  grid-area: members;
+}
+.recentlyFiles .modified{
+  color: #858A9D;
+  grid-area: modified;
+}
+.recentlyFiles .recentFile{
+  grid-area: recentFile;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  
+}
+
+.shared{
+  grid-area: shareduser;
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+  justify-content: space-evenly;
+}
+.shared .sharedTitle{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.shared .sharedCards{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
