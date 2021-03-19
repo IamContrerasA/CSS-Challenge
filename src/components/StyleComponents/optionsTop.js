@@ -10,17 +10,18 @@ export const OptionsTop = ({ children, className }) => {
 };
 
 export const OptionsTopStyle = styled(OptionsTop)`
-  height: 10px;
-  margin-top: 38px;
   font-size: 14px;
   color: ${props => props.isSelected === 'true' ? "#FFFFFF" : "#858A9D"};
-  display: flex;
+  display: grid;
   align-items: center;
+  grid-template-rows: 50px;
+  grid-template-columns: 18% 15% 67%;
+	grid-template-areas: 
+    "selected square .";
 
   .square {
     width: 15px;
     height: 15px;
-    margin-right: 20px;
     border: 1px solid ${props => props.isSelected === 'true' ? "#FFFFFF" : "#858A9D"};;
     box-sizing: border-box;
   }
@@ -30,10 +31,9 @@ export const OptionsTopStyle = styled(OptionsTop)`
     .selected {
       width: 7px;
       height: 44px;
-      margin-right: 20px;
       background: white;
       border-radius: 0 7px 7px 0px; 
     }
   `
-  : `margin-left: 27px;`}
+  : ``}
 `;

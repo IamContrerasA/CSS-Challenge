@@ -1,14 +1,14 @@
 .sidebar-left {
 	display: grid;
 	grid-gap: 0%;
-	grid-template-rows: 10% 39% 2% 39% 10%;
-  grid-template-columns: 100%;
+	grid-template-rows: 13% 36% 2% 39% 10%;
+  grid-template-columns: 18% 64% 18%;
 	grid-template-areas: 
-    "gradient"
-    "options-top"
-    "line-mid"
-    "options-bottom"
-    "bottom-button";
+    "gradient gradient gradient"
+    "options-top options-top options-top "
+    "line-mid line-mid line-mid"
+    ". options-bottom ."
+    ". bottom-button .";
 }
 
 .gradient{
@@ -28,9 +28,7 @@
 .options-bottom{
   align-self: end;
   height: 100px;
-  margin-left: 18%;
-  margin-right: 18%;
-  margin-bottom: 10%;
+  margin-bottom: 15%;
   background: #464C61;
   border-radius: 9px;
   
@@ -49,8 +47,6 @@
 }
 
 .bottom-button{
-  margin-left: 18%;
-  margin-right: 18%;
   grid-area: bottom-button;
   display: flex;
   flex-direction: row;
