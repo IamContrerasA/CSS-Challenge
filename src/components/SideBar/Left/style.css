@@ -2,12 +2,13 @@
 	display: grid;
 	grid-gap: 0%;
 	grid-template-rows: 10% 39% 2% 39% 10%;
+  grid-template-columns: 100%;
 	grid-template-areas: 
     "gradient"
     "options-top"
     "line-mid"
     "options-bottom"
-    "button";
+    "bottom-button";
 }
 
 .gradient{
@@ -44,8 +45,10 @@
 	border-bottom-color: #464C61;
 }
 
-.button{
+.bottom-button{
   margin-left: 18%;
   margin-right: 18%;
-  grid-area: button;
+  grid-area: bottom-button;
+  display: flex;
+  flex-direction: row;
 }

@@ -31,7 +31,7 @@ export const SidebarLeft = () => {
         <OptionsBottomStyle>Trash</OptionsBottomStyle>  
       </div>
 
-      <div className = 'button'>
+      <div className = 'bottom-button'>
         <Button>Create new<span className="plusSymbol">&#43;</span></Button>
       </div>
     </div>
