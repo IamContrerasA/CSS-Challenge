@@ -27,7 +27,6 @@ export const SidebarRight = () => {
         
         <svg viewBox='0 0 100 100'>
           <circle cx='50' cy='50' r='45' id='orange'/>
-          <circle cx='50' cy='50' r='45' id='orange2'/>
           <circle cx='50' cy='50' r='45' id='green'/>
           <circle cx='50' cy='50' r='45' id='gray'/>
           <circle cx='50' cy='50' r='45' id='blue'/>
