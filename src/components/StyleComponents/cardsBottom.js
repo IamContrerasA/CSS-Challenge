@@ -4,7 +4,7 @@ export const BottomCard = ({ children, className }) => {
   const Component = `div`;
   return <Component className={className}>
       <span className="square"></span>
-      <span className="multiCircles"></span>
+      <span className="multiCircles1"></span>
       <span className="multiCircles2"></span>
       <span className="multiCircles3"></span>
       <span className="text1"></span>
@@ -12,6 +12,30 @@ export const BottomCard = ({ children, className }) => {
       
       {children}
     </Component>;
+};
+
+const circle = (pos = 1, last = '#FF6860') => {
+  let defCircle = `border: 1px solid #4AC29D;`;
+  if(pos === 2 )
+    defCircle = `
+      margin-left: 15px;
+      border: 1px solid ${last};
+    `;
+  if (pos === 3)
+    defCircle = `
+      margin-left: 30px;
+      border: 1px solid #FF9F00;
+      background: white;
+    `;
+  return `
+    .multiCircles${pos}{
+      width: 20px;
+      height: 20px;
+      ${defCircle}
+      border-radius: 50%;
+      grid-area: multiCircles;
+    }
+  `;
 };
 
 export const CardBottomStyles = styled(BottomCard)`
@@ -38,33 +62,10 @@ export const CardBottomStyles = styled(BottomCard)`
     margin-left: 25px;
     grid-area: square;
   }
-  .multiCircles{
-    width: 20px;
-    height: 20px;
-    border: 1px solid #4AC29D;
-    border-radius: 50%;
-    grid-area: multiCircles;
-  }
-  .multiCircles2{
-    width: 20px;
-    height: 20px;
-    margin-left: 15px;
-    border: 1px solid ${(props)=>props.last || `#FF6860`};
-    background: white;
-    border-radius: 50%;
-    grid-area: multiCircles;
-  }
-  ${(props) => props.size >= 3 ?`
-    .multiCircles3{
-      width: 20px;
-      height: 20px;
-      margin-left: 30px;
-      border: 1px solid #FF9F00;
-      background: white;
-      border-radius: 50%;
-      grid-area: multiCircles;
-    }`
-  :''}
+
+  ${circle()}
+  ${(props) => circle(2, props.last) || ''}
+  ${(props) => props.size >= 3 ? circle(3) : ''}
 
   .text1{
     font-size: 14px;
