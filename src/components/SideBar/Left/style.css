@@ -1,0 +1,53 @@
+.sidebar-left {
+	display: grid;
+	grid-gap: 0%;
+	grid-template-rows: 13% 36% 2% 39% 10%;
+  grid-template-columns: 18% 64% 18%;
+	grid-template-areas: 
+    "gradient gradient gradient"
+    "options-top options-top options-top "
+    "line-mid line-mid line-mid"
+    ". options-bottom ."
+    ". bottom-button .";
+}
+
+.gradient{
+  grid-area: gradient;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.options-top{
+  grid-area: options-top;
+}
+.line{
+  height: 0px;
+	border: 1px solid #464C61;
+  grid-area: line-mid;
+}
+.options-bottom{
+  align-self: end;
+  height: 100px;
+  margin-bottom: 15%;
+  background: #464C61;
+  border-radius: 9px;
+  
+	filter: drop-shadow(0 0 0 rgba(0, 0, 0, 0));
+
+  grid-area: options-bottom;  
+}
+.options-bottom::before {
+	content: '';
+	position: absolute;
+	top: 99%;
+	left: 10px;
+  transform: rotate(180deg);
+	border: .75rem solid transparent;
+	border-bottom-color: #464C61;
+}
+
+.bottom-button{
+  grid-area: bottom-button;
+  display: flex;
+  flex-direction: row;
+}
